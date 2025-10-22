@@ -55,6 +55,10 @@ mostrarMovimientos=function(misMovimientos){
     cmpTabla.innerHTML = contenidoTabla;
     //Si el tipo es C(CREDITO), mostrar el monto en positivo (tal como está guardado)
 }
+ejecutarMovimientos=function(){
+    let numeroCuenta= recuperarTexto("txtNumCuenta3");
+    filtrarMovimientos(numeroCuenta);
+}
 
 
 
