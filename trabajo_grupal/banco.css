@@ -1,0 +1,95 @@
+body{
+   
+}
+.principal{
+    display: flex;
+    
+}
+.menu{
+    display: flex;
+    flex:1;
+   
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    
+}
+.contenido{
+    display: flex;
+    flex:5;
+   
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorLogo{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorInfoGrupo{
+    display: flex;
+    flex: 1;
+   
+    flex-direction: column;
+}
+
+
+.contenedorBotones{
+    display: flex;
+    flex:4;
+    flex-direction: column;
+    justify-content: center;
+}
+.boton{
+    margin-top: 10px;
+}
+.contenedorTexto{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    flex:1;
+
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+.contenedorAcciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.etiquetaTexto{
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+}
+
+.cajaTexto{
+    display: flex;
+    flex:1;
+    justify-content: flex-start;
+}
+.superior{
+    margin-top: 40px;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+.inferior{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    margin-top: 30px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
