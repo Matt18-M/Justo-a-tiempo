@@ -28,30 +28,36 @@
             <div class="superior">
                 <div class="titulo">CUENTAS</div>
                 <div class="contenedorTexto">
-                    <div class="etiquetaTexto">CAMPO 1</div>
+                    <div class="etiquetaTexto">Numero de Cuenta</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtNumeroCuenta"/>
                     </div>
                 </div>
                 <div class="contenedorTexto">
-                    <div class="etiquetaTexto">CAMPO 2</div>
+                    <div class="etiquetaTexto">Cedula</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtCedula"/>
                     </div>
                 </div>
                 <div class="contenedorTexto">
-                    <div class="etiquetaTexto">CAMPO 3</div>
+                    <div class="etiquetaTexto">Nombre</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtNombre"/>
+                    </div>
+                </div>
+                <div class="contenedorTexto">
+                    <div class="etiquetaTexto">Apellido</div>
+                    <div class="cajaTexto">
+                        <input type="text" class="caja" id="txtApellido"/>
                     </div>
                 </div>
                 <div class="contenedorAcciones">
-                    <input type="button" value="GUARDAR" />
+                    <input type="button" value="GUARDAR" onclick="agregar();"/>
                 </div>
             </div>
 
-            <div class="inferior">
-                TABLA
+            <div class="inferior" id="lblTabla">
+                
             </div>
 
         </div>
