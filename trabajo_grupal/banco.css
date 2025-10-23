@@ -1,48 +1,70 @@
 body{
-   
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
 }
 .principal{
     display: flex;
-    
+    height: 100vh;
 }
 .menu{
     display: flex;
     flex:1;
-   
     flex-direction: column;
     align-items: center;
-    height: 500px;
-    
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
 }
 .contenido{
     display: flex;
     flex:5;
-   
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .contenedorLogo{
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 .contenedorInfoGrupo{
     display: flex;
     flex: 1;
-   
     flex-direction: column;
+    margin-top: auto;
+    font-size: 12px;
+    text-align: center;
 }
-
 
 .contenedorBotones{
     display: flex;
     flex:4;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 .boton{
     margin-top: 10px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.boton:hover{
+    background-color: #2980b9;
 }
 .contenedorTexto{
     display: flex;
@@ -50,11 +72,9 @@ body{
     align-items: start;
     justify-content: center;
     flex:1;
-
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-  
 }
 .contenedorAcciones{
     display: flex;
@@ -62,13 +82,16 @@ body{
     justify-content: center;
     align-items: center;
     flex:1;
+    gap: 10px;
+    margin-top: 15px;
 }
 .etiquetaTexto{
     display: flex;
     flex:1;
     justify-content: flex-end;
     margin-right: 10px;
-
+    align-items: center;
+    font-weight: bold;
 }
 
 .cajaTexto{
@@ -76,20 +99,109 @@ body{
     flex:1;
     justify-content: flex-start;
 }
+.caja{
+    padding: 8px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+}
+.caja:focus{
+    outline: none;
+    border-color: #3498db;
+}
 .superior{
     margin-top: 40px;
     display: flex;
     flex:1;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
 }
 .inferior{
     display: flex;
     flex:1;
     justify-content: center;
     margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
 }
 .titulo{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e8f4f8;
+}
+
+/* Estilos para botones de acciones */
+input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+input[type="button"]:not(.boton) {
+    background-color: #27ae60;
+    color: white;
+}
+
+input[type="button"]:not(.boton):hover {
+    background-color: #219652;
+}
+
+input[type="button"]:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Estilos específicos para botones de transacciones */
+#btnDepositar {
+    background-color: #27ae60;
+}
+
+#btnRetirar {
+    background-color: #e74c3c;
+}
+
+#btnDepositar:hover {
+    background-color: #219652;
+}
+
+#btnRetirar:hover {
+    background-color: #c0392b;
 }
